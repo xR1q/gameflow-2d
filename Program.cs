@@ -1,0 +1,1 @@
+﻿new TestApp.Main().Run();
