@@ -1,5 +1,7 @@
 ﻿using GF2D;
+using GF2D.Core;
 using GF2D.Graphics;
+using GF2D.Utils.UI;
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Mathematics;
 
@@ -7,14 +9,17 @@ namespace TestApp
 {
     public class Main : Game
     {
-        private readonly Painter painter;
-
-        public Main()
+        protected override void Initialize()
         {
-            painter = new();
+        }
+        protected override void LoadContent()
+        {
+        }
+        protected override void Update(GameTime gameTime)
+        {
         }
         protected override void Render(GameTime gameTime)
-        {
+        {   
             GL.ClearColor(Color4.CornflowerBlue);
             GL.Clear(ClearBufferMask.ColorBufferBit);
         }

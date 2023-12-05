@@ -8,7 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GameFlow2D" Version="1.2.0" />
+    <PackageReference Include="NAudio.WinMM" Version="2.2.1" />
+    <PackageReference Include="OpenTK" Version="4.8.1" />
+    <PackageReference Include="OpenTK.Mathematics" Version="4.8.1" />
+    <PackageReference Include="SpaceWizards.SharpFont" Version="1.0.1" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GF2D">
+      <HintPath>..\opentk\GameFlow2D\GF2D\bin\Debug\net6.0\GF2D.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="freetype6.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
